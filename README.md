@@ -25,15 +25,15 @@ http://localhost:7100/?link=https://github.com/&extension=pdf
 http://localhost:7100/?link=https://github.com/&extension=jpg&wh=480,600
 ```
 
-As you can see there is only a single required parameter, that is "link". You can also choose the target extension (available options are pdf, png, and jpg). Moreover, you can change the viewport using the "wh" argument, passing the desired width,height in pixels. 
+As you can see there is only a single required parameter, that is, "link". You can also choose the target extension (available options are pdf, png, and jpg). Moreover, you can change the viewport using the "wh" argument, passing the desired width,height in pixels. 
 
-Notice that with the webservice tool you cannot convert local files directly. You could use NGINX or any similar service to locally host your files or you could use the CLI tool to convert your files locally.
+Notice that with the webservice tool you cannot convert local files directly; however, you could use NGINX or any similar service to locally host your files or you could use the CLI tool to convert your local files.
 
 ## HTML2X-cli
 
 ### Deployment:
 
-Start by pulling the docker image and deploying it locally. 
+Simply pull the docker image.
 ```bash
 docker pull mwmansour/html2x-cli
 ```
@@ -56,4 +56,4 @@ docker run --rm -v $(pwd):/exported/ mwmansour/html2x-cli sh html2x.sh file:///e
 
 ## Building the containers
 
-If you prefer to build the containers as: you can do so by simply executing the docker_build.sh file after cloning the project.
+If you prefer to build the containers, you can do so by simply executing the docker_build.sh file after cloning the project.
