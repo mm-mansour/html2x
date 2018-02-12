@@ -12,7 +12,7 @@ Start by pulling the docker image and deploying it locally.
 
 ```bash
 docker pull mwmansour/html2x-webservice
-docker run --rm -p 7100:7000 docker pull mwmansour/html2x-webservice 
+docker run --rm -p 7100:7000 mwmansour/html2x-webservice 
 ```
 
 ### How to use:
